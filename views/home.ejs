@@ -1,0 +1,18 @@
+<%-include('partial/header')-%>
+<h1>Home</h1>
+<p><%= home %></p>
+
+<% postskey.forEach(function(singlepost){ %>
+    
+ <h1><%= singlepost.title %></h1>
+ <p>
+     <%= singlepost.content.substring(0,100)+'....'  %>
+     <a href="singlepost.title">Read more</a>
+</p>
+<% });  %>
+  
+
+
+<%-include('partial/footer')-%>
+
+
